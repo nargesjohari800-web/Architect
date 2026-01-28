@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رزومه حرفه‌ای | [نام معمار]</title>
+
+    <!-- اتصال استاندارد CSS در HEAD -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- استفاده از فونت استاندارد فارسی (مثلاً Vazirmatn از Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- 1. HEADER (بخش ناوبری و معرفی) -->
+    <header class="main-header">
+        <div class="header__logo">
+            <a href="#hero">آرشیتکت | بهاره شبگرد </a>
+        </div>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li><a href="#about" class="nav__link">درباره من</a></li>
+                <li><a href="#skills" class="nav__link">مهارت‌ها</a></li>
+                <li><a href="#portfolio" class="nav__link">نمونه کارها</a></li>
+                <li><a href="#contact" class="nav__link nav__link--cta">تماس</a></li>
+            </ul>
+        </nav>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </header>
+
+
+    <main>
+
+
+        <section id="hero" class="hero">
+            <div class="hero__content">
+                <p class="hero__subtitle">معمار و طراح سه‌بعدی</p>
+                <h1 class="hero__title">سلام، من بهاره شبگرد هستم.</h1>
+                <p class="hero__description">خلق فضاهایی که فراتر از انتظارند، با تخصص در طراحی پایدار و معماری مدرن.
+                </p>
+                <a href="#portfolio" class="hero__cta">مشاهده نمونه کارها</a>
+            </div>
+
+            <div class="hero__image-placeholder">
+                <img src="./imeag.jpg" alt="تصویر پروفایل [نام]" class="profile-image">
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2 class="section-title">درباره من</h2>
+            <div class="about__content">
+                <p>من با ۱۰ سال تجربه در زمینه طراحی معماری، پروژه‌های مسکونی، تجاری و عمومی را از فاز مفهوم تا اجرا
+                    هدایت کرده‌ام. تمرکز من بر ترکیب زیبایی‌شناسی با عملکرد و پایداری محیطی است.</p>
+                <ul class="about__details">
+                    <li><strong>تخصص:</strong> BIM، طراحی پارامتریک</li>
+                    <li><strong>زبان‌ها:</strong> فارسی، انگلیسی</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section id="skills" class="skills">
+            <h2 class="section-title">مهارت‌ها و ابزارها</h2>
+            <div class="skills__list">
+                <div class="skill-item">AutoCAD</div>
+                <div class="skill-item">Revit</div>
+                <div class="skill-item">SketchUp</div>
+                <div class="skill-item">Adobe Suite</div>
+                <div class="skill-item">مدیریت پروژه</div>
+            </div>
+        </section>
+
+
+        <section id="portfolio" class="portfolio">
+            <h2 class="section-title">آثار معماری</h2>
+            <p class="section-subtitle">
+                پروژه‌های منتخب معماری، طراحی داخلی و سه‌بعدی
+            </p>
+
+            <div class="portfolio__grid">
+
+                <article class="project-card project-card--residential">
+                    <h3 class="project-title">پروژه مسکونی</h3>
+                    <img src="./پروژه مسکونی.png" alt="imeag">
+                    <span class="project-category">Residential Architecture</span>
+                </article>
+
+                <article class="project-card project-card--commercial">
+                    <h3 class="project-title">مجتمع تجاری</h3>
+                    <img src="./مجتمع.png" alt="">
+
+                    <span class="project-category">Commercial Architecture</span>
+                </article>
+                <article class="project-card project-card--interior">
+                    <h3 class="project-title">طراحی داخلی</h3>
+                    <img src="./مجتمع.png" alt="">
+                    <span class="project-category">Interior Design</span>
+
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- بخش 2.5: CONTACT (تماس با من) -->
+        <section id="contact" class="contact">
+            <h2 class="section-title">تماس با من</h2>
+            <form class="contact__form">
+                <input type="text" placeholder="نام شما" required>
+                <input type="email" placeholder="ایمیل" required>
+                <textarea rows="5" placeholder="پیام شما" required></textarea>
+                <button type="submit" class="contact__button">ارسال پیام</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- 3. FOOTER (پانویس) -->
+    <footer class="main-footer">
+        <p>&copy; 2026 | تمامی حقوق محفوظ است.</p>
+        <div class="footer__social">
+            <a href="#">لینکدین</a>
+            <a href="#">اینستاگرام</a>
+            <a href="">سازمده : نرکس جوهری</a>
+        </div>
+    </footer>
+
+    <!-- اتصال استاندارد JS قبل از بسته شدن BODY با DEFER -->
+    <!-- این کار باعث می‌شود تا تمام عناصر HTML قبل از اجرای JS لود شوند -->
+    <script src="./script.js" defer></script>
+</body>
+
+</html>
